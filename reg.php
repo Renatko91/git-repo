@@ -1,25 +1,15 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>Регистрация</title>
-    </head>
-
-    <body>
+<?php
+    include 'layout/header.php';
+?>
         <h1>Введите данные для регистрации.</h1>
         <form action="" method="POST">
             <input type=text placeholder="login" required name="login">
             <input type=password placeholder="password" required name="password">
             <input type=submit value=Регистрация>
         </form>
-
-        <hr>
-
-        <form action="index.php">
-            <button type=submit>Выйти</button>
-        </form>
-    </body>
-</html>
+<?php
+    include 'layout/footer.php';
+?>
 
 <?php
     try {
